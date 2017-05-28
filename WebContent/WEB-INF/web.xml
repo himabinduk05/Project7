@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>LMS</display-name>
+  <welcome-file-list>
+    <welcome-file>Registration.html</welcome-file>
+    
+  </welcome-file-list>
+  
+     <servlet>
+        <servlet-name>AddBookController</servlet-name>
+        <servlet-class>com.lms.controllers.AddBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBookController</servlet-name>
+        <url-pattern>/addBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteBookController</servlet-name>
+        <servlet-class>com.lms.controllers.DeleteBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBookController</servlet-name>
+        <url-pattern>/deleteBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetEmloyeeDetailsController</servlet-name>
+        <servlet-class>com.lms.controllers.GetEmloyeeDetailsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetEmloyeeDetailsController</servlet-name>
+        <url-pattern>/getEmployeeDetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>IssueBookController</servlet-name>
+        <servlet-class>com.lms.controllers.IssueBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IssueBookController</servlet-name>
+        <url-pattern>/issueBookDetails</url-pattern>
+    </servlet-mapping>
+  
+     <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.lms.controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>RegistrationController</servlet-name>
+        <servlet-class>com.lms.controllers.RegistrationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationController</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>ReturnBookController</servlet-name>
+        <servlet-class>com.lms.controllers.ReturnBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReturnBookController</servlet-name>
+        <url-pattern>/returnBook</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>SearchBookController</servlet-name>
+        <servlet-class>com.lms.controllers.SearchBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchBookController</servlet-name>
+        <url-pattern>/searchBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>StatusReportController</servlet-name>
+        <servlet-class>com.lms.controllers.StatusReportController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatusReportController</servlet-name>
+        <url-pattern>/statusReport</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateBookController</servlet-name>
+        <servlet-class>com.lms.controllers.UpdateBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateBookController</servlet-name>
+        <url-pattern>/updateBook</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>ViewAllBooksController</servlet-name>
+        <servlet-class>com.lms.controllers.ViewAllBooksController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllBooksController</servlet-name>
+        <url-pattern>/viewAllBooks</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
